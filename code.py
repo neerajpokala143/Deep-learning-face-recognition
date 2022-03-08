@@ -18,7 +18,7 @@ from io import BytesIO
 from io import BytesIO
 from PIL import ImageDraw
 import json
-st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
+#st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
 st.title("Face Recognition(Powered by Azure)")
 st.header('Face Recognition:')
 st.markdown("Using Azure I build to detect, identify and analyse faces in images.")
