@@ -19,6 +19,94 @@ from io import BytesIO
 from PIL import ImageDraw
 import json
 
+
+st.sidebar.title("Crop prediction")
+
+Mode = st.sidebar.selectbox('Choose mode',
+                            ['About Project', 'About Me', 'Crop Predictor',
+                                'Dataset', 'Range of Crops']
+                            )
+
+if Mode == 'About Project':
+
+    st.markdown(
+        """
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>Document</title>
+            <style>
+                .class1 {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 50px;
+                    font-weight: bold;
+                    color:lightseagreen;
+                }
+                .class2 {
+                    padding-left: 300px;
+                    font-style: italic;
+                    color:crimson;
+                }
+                .classmain {
+                    display: flex;
+                    flex-flow: column;
+                    text-align: center;
+                }
+                ul {
+                    list-style: disc;
+                }
+                #id1 {
+                    font-family: 'Times New Roman', Times, serif;
+                    padding-left: 20px;
+                    font-size: 30px;
+                    color: cornflowerblue;
+                }
+                #id2 {
+                    font-family: 'Times New Roman', Times, serif;
+                    padding-left: 20px;
+                    font-size: 30px;
+                    color: cornflowerblue;
+                }
+                #id3 {
+                    font-family: 'Times New Roman', Times, serif;
+                    padding-left: 20px;
+                    font-size: 30px;
+                    color: cornflowerblue;
+                }
+                p{
+                    padding-left: 20px;
+                }
+            </style>
+            <link rel="stylesheet" href="crop.css">
+        </head>
+        <body>
+            <div class="classmain">
+                <div class="class1"><u>Crop Recommendation</u></div>
+                <div class="class2">Maximize agricultural yield by recommending appropriate crops</div>
+            </div>
+            <p id="id1"><strong><u>Prerequisites:</u></strong></p>
+            <p>
+            <ul>
+                <li>
+                    In general, agriculture is the backbone of India and also plays an important role in Indian economy
+                    by providing a certain percentage of domestic product to ensure the food security. But now-a-days, food
+                    production and prediction are getting depleted due to unnatural climatic changes, which will adversely
+                    affect the economy of farmers by getting a poor yield and also help the farmers to remain less familiar
+                    in forecasting the future crops.
+                </li>
+                <li>
+                    This project work helps the beginner farmer in such a way to guide them for sowing the reasonable
+                    crops according to the physical parameters of the soil. This achieved by deploying machine learning, one
+                    of the advanced technologies in crop prediction. Logistic regression, a supervised learning algorithm
+                    puts forth in the way to achieve it. The crops are determined here, with the appropriate physical
+                    parameters which effects the crops and helps the crops to achieve a successful growth.
+                </li>
+                <li>
+                    In addition as the software, a Web application being developed. The users are encouraged to enter
+                    parameters will be taken automatically in this application in order to start the prediction process.
+                </li>
+            </ul>
+            </p>
         
 #if app_mode=='Face Recognization':
   #st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
