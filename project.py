@@ -22,10 +22,10 @@ import json
         
 #if app_mode=='Face Recognization':
   #st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
-  st.title("Face Recognition(Powered by Azure)")
-  st.header('Face Recognition:')
-  st.markdown("Using Azure I build to detect, identify and analyse faces in images.")
-  st.text("Detect the objects in images")
+st.title("Face Recognition(Powered by Azure)")
+st.header('Face Recognition:')
+st.markdown("Using Azure I build to detect, identify and analyse faces in images.")
+st.text("Detect the objects in images")
   
   image_file =  st.file_uploader("Upload Images (less than 1mb)", type=["png","jpg","jpeg"])
   if image_file is not None:
