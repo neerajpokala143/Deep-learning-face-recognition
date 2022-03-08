@@ -18,7 +18,6 @@ from io import BytesIO
 from io import BytesIO
 from PIL import ImageDraw
 import json
-if app_mode=='Face Recognization':
   st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
   st.title("Face Recognition(Powered by Azure)")
   st.header('Face Recognition:')
