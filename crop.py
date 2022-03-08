@@ -117,7 +117,7 @@ if Mode == 'About Project':
         unsafe_allow_html=True,
     )
 
-if app_mode=='Face Recognization':
+if mode=='Face Recognization':
   #st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
   st.title("Face Recognition with deep learning Powered by Azure")
   st.header('Face Recognition:')
